@@ -7,4 +7,4 @@ perl -e ' open(R, "/dev/urandom"); $n=""; for ($i=0; $i < 5; $i++) {  read(R, $r
 # Decode base64 which encodes two 64-bit unsigned integers.
 Replace $e with your preferred base64 encoded thing.
 
-perl -e ' use MIME::Base64; $e = "AAAAAAAAAAAIAAAAAAAAAA==";  $d = decode_base64($e); @A = unpack("QQ", $d); print join(",", @A) . "\n"; 
+perl -e ' use MIME::Base64; $e = "AAAAAAAAAAAIAAAAAAAAAA==";  $d = decode_base64($e); @A = unpack("QQ", $d); print join(",", @A) . "\n"; '
